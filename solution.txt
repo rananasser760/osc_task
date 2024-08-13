@@ -1,14 +1,13 @@
-mkdir [Rana]
-cd [Rana]
-touch one.txt two.txt three.txt four.txt
-mkdir BAD
-touch BAD/bad.txt
-mv one.txt ~/Downloads/
-cd ~/Downloads
-cp one.txt copy.txt
-cd ~/[Rana]
+mkdir Rana
+touch Rana/one.txt Rana/two.txt Rana/three.txt Rana/four.txt
+mkdir Rana/BAD
+touch Rana/BAD/bad.txt
+mv Rana/one.txt ~/Downloads/
+cp ~/Downloads/one.txt ~/Downloads/copy.txt
+cd ~/Rana
 nano two.txt
-echo -e "1-hello OSC\n2-hello OSC\n3-hello OSC\n4-hello OSC\n5-hello OSC\n6-hello OSC\n7-hello OSC\n8-hello OSC" > three.txt
+echo "Rana" > two.txt 
+echo "1-hello OSC 2-hello OSC 3-hello OSC 4-hello OSC 5-hello OSC 6-hello OSC 7-hello OSC 8-hello OSC" > three.txt
 mv three.txt hello.txt
 rm four.txt
-rm -r BAD
+rm -r BAD
