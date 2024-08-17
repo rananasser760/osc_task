@@ -1,0 +1,21 @@
+git config --global user.name "Rana Nasser"
+git config --global user.email rananasser760gmail.com
+cd '/home/Rana Nasser'
+git clone https://github.com/rananasser760/osc_task.git
+cd osc_task
+mkdir task-2
+cd task-2
+touch greeting.txt
+echo "Hello World" > greeting.txt
+git add greeting.txt
+git commit -m "Added greeting"
+git branch intro
+git checkout intro
+echo "I Love Git" >> greeting.txt
+git add greeting.txt
+git commit -m "Added I Love Git"
+git switch main
+git merge intro
+git tag v1 
+git push origin main 
+git push origin v1
